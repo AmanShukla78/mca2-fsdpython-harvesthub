@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HarvestHub (P08) - Interactive Farm Management Preview</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- React 18 & Babel Standalone for Instant Local Execution -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    :root {
+      --primary-green: #2e7d32;
+      --bg-light: #f8fafc;
+      --border-color: #e2e8f0;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-light);
+      color: #1e293b;
+    }
+    .brand-nav {
+      background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+      box-shadow: 0 4px 12px rgba(27, 94, 32, 0.15);
+    }
+    .nav-link.active-tab {
+      background-color: rgba(255, 255, 255, 0.22) !important;
+      border-radius: 6px;
+      font-weight: 600;
+      color: #fff !important;
+    }
+    .kpi-card {
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      background: #ffffff;
+      transition: transform 0.2s;
+    }
+    .kpi-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+    .metric-value { font-size: 1.85rem; font-weight: 700; color: #0f172a; }
+    .metric-label { font-size: 0.825rem; font-weight: 600; text-transform: uppercase; color: #64748b; }
+    .badge-status { padding: 0.35em 0.65em; font-weight: 600; border-radius: 6px; font-size: 0.775rem; }
+    .badge-active { background-color: #dcfce7; color: #166534; }
+    .badge-in-progress { background-color: #e0f2fe; color: #0369a1; }
+    .badge-planned { background-color: #fef3c7; color: #92400e; }
+    .badge-completed { background-color: #d1fae5; color: #065f46; }
+    .badge-maintenance { background-color: #fee2e2; color: #991b1b; }
+    .badge-idle { background-color: #f1f5f9; color: #475569; }
+    .field-card { border-left: 5px solid #2e7d32; border-radius: 10px; background: #fff; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    const initialMockState = {
+      kpis: {
+        total_farms: 10, total_acres: 876.0, total_fields: 15, planted_fields: 11,
+        active_plantings: 18, harvested_plantings: 38, pending_operations: 14,
+        total_expenses_inr: 4892400.0, total_revenue_inr: 12480600.0,
+        net_profit_inr: 7588200.0, total_equipment: 14, active_equipment: 10,
+        maintenance_equipment: 2, idle_equipment: 2, total_fleet_hours: 12450.5,
+        total_fuel_litres: 74210.0, low_stock_parts: 3
+      },
+      farms: [
+        { farm_id: 1, farm_name: "Sahyadri Agro Estate", owner_name: "Ramesh Patil", total_acres: 85.50, city: "Nashik", state: "Maharashtra", fields_count: 3 },
+        { farm_id: 2, farm_name: "Malwa Golden Fields", owner_name: "Gurpreet Singh", total_acres: 120.00, city: "Bathinda", state: "Punjab", fields_count: 3 },
+        { farm_id: 3, farm_name: "Deccan Gold Farm", owner_name: "Suresh Deshmukh", total_acres: 65.00, city: "Pune", state: "Maharashtra", fields_count: 2 },
+      ],
+      fields: [
+        { field_id: 1, farm_name: "Sahyadri Agro Estate", field_name: "North Plot A - Vineyard & Veg", area_acres: 25.00, soil_type: "Black Cotton", irrigation_source: "Drip Irrigation", status: "Planted", active_crop: "Onion (Bhima Super)" },
+        { field_id: 2, farm_name: "Sahyadri Agro Estate", field_name: "South Block B - Onion Terraces", area_acres: 30.50, soil_type: "Black Cotton", irrigation_source: "Canal", status: "Planted", active_crop: "Soybean (JS 335)" },
+        { field_id: 3, farm_name: "Sahyadri Agro Estate", field_name: "East Fallow Meadow C", area_acres: 30.00, soil_type: "Red Soil", irrigation_source: "Borewell", status: "Under Preparation", active_crop: null },
+        { field_id: 4, farm_name: "Malwa Golden Fields", field_name: "Bathinda Canal Track 1", area_acres: 40.00, soil_type: "Alluvial", irrigation_source: "Canal", status: "Planted", active_crop: "Sharbati Wheat" },
+      ],
+      plantings: [
+        { planting_id: 1, crop_name: "Onion (Bhima Super)", field_name: "North Plot A", season: "Rabi 2024-25", sowing_date: "2024-11-10", expected_harvest_date: "2025-03-20", target_yield_kg: 48000, current_stage: "Vegetative", status: "In Progress", total_costs: 145000 },
+        { planting_id: 2, crop_name: "Soybean (JS 335)", field_name: "South Block B", season: "Kharif 2024", sowing_date: "2024-06-15", expected_harvest_date: "2024-10-25", target_yield_kg: 32000, current_stage: "Completed", status: "Harvested", total_costs: 98000 },
+        { planting_id: 3, crop_name: "Sharbati Wheat", field_name: "Bathinda Track 1", season: "Rabi 2024-25", sowing_date: "2024-11-15", expected_harvest_date: "2025-03-30", target_yield_kg: 84000, current_stage: "Maturity", status: "In Progress", total_costs: 215000 },
+      ],
+      operations: [
+        { operation_id: 1, operation_type: "Fertilizer Application", crop_name: "Onion (Bhima Super)", field_name: "North Plot A", scheduled_date: "2024-12-15", status: "Scheduled", assigned_to: "Raju Yadav", equipment: "ASPEE Boom Sprayer" },
+        { operation_id: 2, operation_type: "Irrigation", crop_name: "Sharbati Wheat", field_name: "Bathinda Track 1", scheduled_date: "2024-12-18", status: "Completed", assigned_to: "Balwinder Singh", equipment: "Canal Sluice" },
+      ],
+      costs: [
+        { cost_id: 1, crop_name: "Onion", input_type: "Seed", item_name: "Certified Onion Seeds (10kg)", quantity: "15 Kg", total_cost_inr: 33000, expense_date: "2024-11-05", supplier: "Kisan Agro Seed Corp" },
+        { cost_id: 2, crop_name: "Onion", input_type: "Fertilizer", item_name: "IFFCO 10:26:26 Complex", quantity: "25 Bags", total_cost_inr: 36750, expense_date: "2024-11-12", supplier: "IFFCO Seva Kendra" },
+        { cost_id: 3, crop_name: "Wheat", input_type: "Fuel", item_name: "High Speed Diesel", quantity: "350 L", total_cost_inr: 32375, expense_date: "2024-11-20", supplier: "Mahindra Spares Depot" },
+      ],
+      yields: [
+        { yield_id: 1, crop_name: "Soybean (JS 335)", field_name: "South Block B", harvest_date: "2024-10-25", net_yield_kg: 33500, quality_grade: "Grade A", market_price_per_kg_inr: 46.50, total_revenue_inr: 1557750, buyer: "Godrej Agrovet" },
+        { yield_id: 2, crop_name: "Basmati Rice 1121", field_name: "Bathinda Track 2", harvest_date: "2024-10-18", net_yield_kg: 89000, quality_grade: "Grade A", market_price_per_kg_inr: 42.00, total_revenue_inr: 3738000, buyer: "PUNGRAIN Mandi" }
+      ],
+      equipment: [
+        { equipment_id: 1, name: "Mahindra Arjun Novo 605 DI", category: "Tractor", serial_number: "M&M-NOV-2023-8891", meter_hours: 780.5, status: "Active" },
+        { equipment_id: 2, name: "ASPEE Boom Sprayer 400L", category: "Sprayer", serial_number: "ASP-BOM-2023-4102", meter_hours: 310.0, status: "Active" },
+        { equipment_id: 4, name: "John Deere 5310 PowerTech", category: "Tractor", serial_number: "JD-5310-2022-9904", meter_hours: 1420.0, status: "Active" },
+        { equipment_id: 5, name: "Preet 987 Combine Harvester", category: "Harvester", serial_number: "PRT-987-2022-0043", meter_hours: 680.0, status: "In Maintenance" }
+      ],
+      spares: [
+        { part_id: 1, part_number: "FLT-OIL-MM605", name: "Mahindra Oil Filter Cartridge", stock: 18, reorder: 5, price: 580, is_low: false },
+        { part_id: 10, part_number: "FLT-AIR-KUBOTA", name: "Kubota Dual Air Cleaner Element", stock: 2, reorder: 3, price: 2800, is_low: true },
+        { part_id: 15, part_number: "CHN-ELEV-KUBOTA", name: "Kubota Elevator Drive Chain Link ASM", stock: 0, reorder: 2, price: 4200, is_low: true }
+      ]
+    };
+
+    function App() {
+      const [tab, setTab] = useState('dashboard');
+      const [role, setRole] = useState('FARM_MANAGER');
+      const [data, setData] = useState(initialMockState);
+
+      const tabs = [
+        { id: 'dashboard', label: 'Dashboard', icon: '📊' },
+        { id: 'fields', label: '1. Field Mapping', icon: '🗺️' },
+        { id: 'schedules', label: '2. Planting & Schedules', icon: '📅' },
+        { id: 'costs', label: '3. Input & Costs', icon: '💰' },
+        { id: 'yields', label: '4. Yield & Forecast', icon: '🌾' },
+        { id: 'equipment', label: '5. Fleet Registry', icon: '🚜' },
+        { id: 'spares', label: '8. Spare Parts', icon: '📦' }
+      ];
+
+      return (
+        <div className="d-flex flex-column min-vh-100">
+          <header className="brand-nav text-white py-2 px-3">
+            <div className="container-fluid d-flex flex-wrap align-items-center justify-content-between">
+              <div className="d-flex align-items-center gap-2">
+                <span className="fs-3">🌾</span>
+                <div>
+                  <h1 className="h5 mb-0 fw-bold">HarvestHub</h1>
+                  <small className="text-white-50" style={{ fontSize: '0.72rem' }}>P08 Farm Management Platform</small>
+                </div>
+              </div>
+              <div className="d-flex align-items-center gap-2">
+                <span className="badge bg-success rounded-pill">● System Active</span>
+                <span className="badge bg-light text-dark fw-bold">Role: {role}</span>
+              </div>
+            </div>
+            <div className="container-fluid mt-2 pt-2 border-top border-white border-opacity-10 overflow-x-auto">
+              <ul className="nav nav-pills flex-nowrap gap-1">
+                {tabs.map((t) => (
+                  <li key={t.id} className="nav-item">
+                    <button
+                      className={`nav-link text-white text-nowrap py-1 px-3 ${tab === t.id ? 'active-tab' : 'opacity-75'}`}
+                      style={{ fontSize: '0.825rem' }}
+                      onClick={() => setTab(t.id)}
+                    >
+                      {t.icon} {t.label}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </header>
+
+          <main className="container-fluid py-4 flex-grow-1">
+            {tab === 'dashboard' && (
+              <div>
+                <h4 className="fw-bold mb-3">Farm Operations Executive Dashboard</h4>
+                <div className="row g-3 mb-4">
+                  <div className="col-12 col-sm-6 col-xl-3">
+                    <div className="kpi-card p-3">
+                      <div className="metric-label">Total Land Holding</div>
+                      <div className="metric-value text-success">{data.kpis.total_acres} <span className="fs-6 text-muted">Acres</span></div>
+                      <small className="text-muted">{data.kpis.total_fields} Parcels across {data.kpis.total_farms} Estates</small>
+                    </div>
+                  </div>
+                  <div className="col-12 col-sm-6 col-xl-3">
+                    <div className="kpi-card p-3">
+                      <div className="metric-label">Active Plantings</div>
+                      <div className="metric-value text-primary">{data.kpis.active_plantings} <span className="fs-6 text-muted">Cycles</span></div>
+                      <small className="text-muted">{data.kpis.planted_fields} Fields planted</small>
+                    </div>
+                  </div>
+                  <div className="col-12 col-sm-6 col-xl-3">
+                    <div className="kpi-card p-3">
+                      <div className="metric-label">Fleet Status</div>
+                      <div className="metric-value text-dark">{data.kpis.active_equipment} / {data.kpis.total_equipment} <span className="fs-6 text-muted">Active</span></div>
+                      <small className="text-muted">{data.kpis.maintenance_equipment} in workshop</small>
+                    </div>
+                  </div>
+                  <div className="col-12 col-sm-6 col-xl-3">
+                    <div className="kpi-card p-3">
+                      <div className="metric-label">Net Profit Realized</div>
+                      <div className="metric-value text-success">₹{(data.kpis.net_profit_inr / 100000).toFixed(2)} Lakh</div>
+                      <small className="text-muted">₹{(data.kpis.total_revenue_inr / 100000).toFixed(1)}L Rev vs ₹{(data.kpis.total_expenses_inr / 100000).toFixed(1)}L Cost</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="card border-0 shadow-sm p-3">
+                  <h6 className="fw-bold mb-3">Recent Field Operations</h6>
+                  <table className="table table-hover small">
+                    <thead>
+                      <tr><th>Operation</th><th>Crop & Parcel</th><th>Date</th><th>Assigned</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                      {data.operations.map((op) => (
+                        <tr key={op.operation_id}>
+                          <td><strong>{op.operation_type}</strong></td>
+                          <td>{op.crop_name} ({op.field_name})</td>
+                          <td>{op.scheduled_date}</td>
+                          <td>{op.assigned_to}</td>
+                          <td><span className="badge-status badge-completed">{op.status}</span></td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {tab === 'fields' && (
+              <div>
+                <h4 className="fw-bold mb-3">Module 1: Field & Crop Mapping</h4>
+                <div className="row g-3">
+                  {data.fields.map((f) => (
+                    <div key={f.field_id} className="col-12 col-md-6 col-xl-3">
+                      <div className="card p-3 field-card shadow-sm h-100">
+                        <h6 className="fw-bold mb-1">{f.field_name}</h6>
+                        <small className="text-muted">{f.farm_name}</small>
+                        <div className="my-2 small">
+                          <div><strong>Acreage:</strong> {f.area_acres} Acres</div>
+                          <div><strong>Soil:</strong> <span className="badge bg-secondary-subtle text-secondary">{f.soil_type}</span></div>
+                          <div><strong>Irrigation:</strong> {f.irrigation_source}</div>
+                        </div>
+                        <div className="border-top pt-2 small">
+                          <span className="text-muted">Mapped Crop: </span>
+                          <strong className="text-success">{f.active_crop || 'Fallow / Prep'}</strong>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {tab === 'schedules' && (
+              <div>
+                <h4 className="fw-bold mb-3">Module 2: Planting & Harvesting Schedules</h4>
+                <div className="d-flex flex-column gap-3">
+                  {data.plantings.map((p) => (
+                    <div key={p.planting_id} className="card p-3 shadow-sm border-0">
+                      <div className="d-flex justify-content-between">
+                        <h6 className="fw-bold text-dark">{p.crop_name} ({p.season})</h6>
+                        <span className="badge-status badge-active">{p.status}</span>
+                      </div>
+                      <small className="text-muted">Parcel: {p.field_name}</small>
+                      <div className="row mt-2 small text-muted">
+                        <div className="col-3">Sowing: <strong className="text-dark d-block">{p.sowing_date}</strong></div>
+                        <div className="col-3">Harvest Due: <strong className="text-dark d-block">{p.expected_harvest_date}</strong></div>
+                        <div className="col-3">Target Yield: <strong className="text-success d-block">{p.target_yield_kg.toLocaleString()} kg</strong></div>
+                        <div className="col-3">Current Stage: <strong className="text-primary d-block">{p.current_stage}</strong></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {tab === 'costs' && (
+              <div>
+                <h4 className="fw-bold mb-3">Module 3: Input & Cost Tracking</h4>
+                <div className="card shadow-sm border-0 p-3">
+                  <table className="table table-hover small">
+                    <thead><tr><th>Date</th><th>Category</th><th>Item</th><th>Quantity</th><th>Total (₹)</th><th>Vendor</th></tr></thead>
+                    <tbody>
+                      {data.costs.map((c) => (
+                        <tr key={c.cost_id}>
+                          <td>{c.expense_date}</td>
+                          <td><span className="badge bg-primary-subtle text-primary">{c.input_type}</span></td>
+                          <td><strong>{c.item_name}</strong></td>
+                          <td>{c.quantity}</td>
+                          <td className="fw-bold">₹{c.total_cost_inr.toLocaleString()}</td>
+                          <td>{c.supplier}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {tab === 'yields' && (
+              <div>
+                <h4 className="fw-bold mb-3">Module 4: Yield Analysis & Mandi Revenue</h4>
+                <div className="card shadow-sm border-0 p-3">
+                  <table className="table table-hover small">
+                    <thead><tr><th>Harvest Date</th><th>Crop</th><th>Net Yield</th><th>Quality</th><th>Rate (₹/kg)</th><th>Gross Revenue (₹)</th><th>Buyer</th></tr></thead>
+                    <tbody>
+                      {data.yields.map((y) => (
+                        <tr key={y.yield_id}>
+                          <td>{y.harvest_date}</td>
+                          <td><strong>{y.crop_name}</strong></td>
+                          <td className="text-success fw-bold">{y.net_yield_kg.toLocaleString()} kg</td>
+                          <td><span className="badge bg-success-subtle text-success">{y.quality_grade}</span></td>
+                          <td>₹{y.market_price_per_kg_inr.toFixed(2)}</td>
+                          <td className="fw-bold">₹{y.total_revenue_inr.toLocaleString()}</td>
+                          <td>{y.buyer}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {tab === 'equipment' && (
+              <div>
+                <h4 className="fw-bold mb-3">Module 5: Fleet Registry</h4>
+                <div className="row g-3">
+                  {data.equipment.map((eq) => (
+                    <div key={eq.equipment_id} className="col-12 col-md-6 col-xl-3">
+                      <div className="card p-3 shadow-sm border-0 h-100">
+                        <span className="badge bg-secondary-subtle text-secondary mb-1" style={{ width: 'fit-content' }}>{eq.category}</span>
+                        <h6 className="fw-bold mb-1">{eq.name}</h6>
+                        <code className="small text-muted">{eq.serial_number}</code>
+                        <div className="my-2 small">Operating Hours: <strong className="text-primary">{eq.meter_hours} hrs</strong></div>
+                        <span className={`badge-status ${eq.status === 'Active' ? 'badge-active' : 'badge-maintenance'}`}>{eq.status}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {tab === 'spares' && (
+              <div>
+                <h4 className="fw-bold mb-3">Module 8: Spare Parts Inventory</h4>
+                <div className="card shadow-sm border-0 p-3">
+                  <table className="table table-hover small">
+                    <thead><tr><th>Part Number</th><th>Name</th><th>Stock</th><th>Reorder Level</th><th>Unit Price (₹)</th><th>Status</th></tr></thead>
+                    <tbody>
+                      {data.spares.map((p) => (
+                        <tr key={p.part_id}>
+                          <td><code>{p.part_number}</code></td>
+                          <td><strong>{p.name}</strong></td>
+                          <td className={p.is_low ? 'text-danger fw-bold' : 'text-success fw-bold'}>{p.stock}</td>
+                          <td>{p.reorder}</td>
+                          <td>₹{p.price.toLocaleString()}</td>
+                          <td>
+                            {p.stock === 0 ? <span className="badge bg-danger">Out of Stock</span> :
+                             p.is_low ? <span className="badge bg-warning text-dark">Low Stock</span> :
+                             <span className="badge bg-success">Adequate</span>}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+          </main>
+
+          <footer className="bg-white border-top py-3 text-center text-muted small">
+            HarvestHub (P08) &bull; Comprehensive Farm Management & Crop Planning Platform
+          </footer>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>
