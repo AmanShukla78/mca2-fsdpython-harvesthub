@@ -1,0 +1,16 @@
+field_id,farm_id,field_name,boundary_geojson,area_acres,soil_type,irrigation_source,status
+1,1,North Plot A - Vineyard & Veg,"{""type"":""Polygon"",""coordinates"":[[[73.987,20.174],[73.990,20.174],[73.990,20.177],[73.987,20.177],[73.987,20.174]]]}",25.0,Black Cotton,Drip Irrigation,Planted
+2,1,South Block B - Onion Terraces,"{""type"":""Polygon"",""coordinates"":[[[73.986,20.170],[73.989,20.170],[73.989,20.173],[73.986,20.173],[73.986,20.170]]]}",30.5,Black Cotton,Canal,Planted
+3,1,East Fallow Meadow C,,30.0,Red Soil,Borewell,Under Preparation
+4,2,Bathinda Canal Track 1,"{""type"":""Polygon"",""coordinates"":[[[74.851,30.124],[74.856,30.124],[74.856,30.128],[74.851,30.128],[74.851,30.124]]]}",40.0,Alluvial,Canal,Planted
+5,2,Bathinda TubeWell Track 2,"{""type"":""Polygon"",""coordinates"":[[[74.857,30.124],[74.862,30.124],[74.862,30.128],[74.857,30.128],[74.857,30.124]]]}",45.0,Alluvial,Borewell,Planted
+6,2,Sangat Fallow Sector 3,,35.0,Sandy Loam,Rainfed,Fallow
+7,3,Manjri Sugarcane Block 1,"{""type"":""Polygon"",""coordinates"":[[[73.981,18.498],[73.985,18.498],[73.985,18.502],[73.981,18.502],[73.981,18.498]]]}",35.0,Clay Loam,Drip Irrigation,Planted
+8,3,Manjri Fodder & Pulses 2,"{""type"":""Polygon"",""coordinates"":[[[73.985,18.498],[73.989,18.498],[73.989,18.502],[73.985,18.502],[73.985,18.498]]]}",30.0,Black Cotton,River Lift,Active
+9,4,Tenali Paddy Delta 1,"{""type"":""Polygon"",""coordinates"":[[[80.640,16.243],[80.645,16.243],[80.645,16.248],[80.640,16.248],[80.640,16.243]]]}",50.0,Alluvial,Canal,Planted
+10,4,Krishna Cotton Ridge 2,,45.0,Black Cotton,Borewell,Active
+11,5,Taraori Basmati Belt A,"{""type"":""Polygon"",""coordinates"":[[[76.929,29.803],[76.935,29.803],[76.935,29.808],[76.929,29.808],[76.929,29.803]]]}",60.0,Clay Loam,Canal,Planted
+12,5,Taraori Mustard & Wheat B,"{""type"":""Polygon"",""coordinates"":[[[76.936,29.803],[76.942,29.803],[76.942,29.808],[76.936,29.808],[76.936,29.803]]]}",50.0,Alluvial,Sprinkler,Planted
+13,8,Gondal Groundnut Zone 1,"{""type"":""Polygon"",""coordinates"":[[[70.781,21.942],[70.787,21.942],[70.787,21.947],[70.781,21.947],[70.781,21.942]]]}",70.0,Red Soil,Borewell,Planted
+14,8,Gondal Cotton Zone 2,"{""type"":""Polygon"",""coordinates"":[[[70.788,21.942],[70.794,21.942],[70.794,21.947],[70.788,21.947],[70.788,21.942]]]}",70.0,Black Cotton,Drip Irrigation,Planted
+15,10,Vidarbha Orange & Cotton Plot 1,,45.0,Black Cotton,Borewell,Under Preparation

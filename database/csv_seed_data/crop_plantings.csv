@@ -1,0 +1,57 @@
+planting_id,field_id,crop_id,season,sowing_date,expected_harvest_date,actual_harvest_date,target_yield_kg,actual_yield_kg,current_stage,status,notes
+1,1,2,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,43601.61,46077.6,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #1. Soil test recommended prior to nitrogen top-dressing.
+2,2,3,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,27736.56,27705.29,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #2. Soil test recommended prior to nitrogen top-dressing.
+3,3,4,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,27949.96,28768.79,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #3. Soil test recommended prior to nitrogen top-dressing.
+4,4,5,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,40773.8,43476.02,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #4. Soil test recommended prior to nitrogen top-dressing.
+5,5,6,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,65578.07,68389.38,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #5. Soil test recommended prior to nitrogen top-dressing.
+6,6,7,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,24862.0,23926.79,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #6. Soil test recommended prior to nitrogen top-dressing.
+7,7,8,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,64600.82,66696.68,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #7. Soil test recommended prior to nitrogen top-dressing.
+8,8,9,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,18222.9,18963.11,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #8. Soil test recommended prior to nitrogen top-dressing.
+9,9,10,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,39063.14,38784.79,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #9. Soil test recommended prior to nitrogen top-dressing.
+10,10,11,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,18315.95,19545.47,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #10. Soil test recommended prior to nitrogen top-dressing.
+11,11,12,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,25351.18,24100.68,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #11. Soil test recommended prior to nitrogen top-dressing.
+12,12,1,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,40346.03,38704.98,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #12. Soil test recommended prior to nitrogen top-dressing.
+13,13,2,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,32415.62,34849.38,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #13. Soil test recommended prior to nitrogen top-dressing.
+14,14,3,Kharif 2024,2024-06-15,2024-10-25,2024-10-25,31383.01,31954.19,Completed,Harvested,Rotational crop cycle for Kharif 2024 on Field #14. Soil test recommended prior to nitrogen top-dressing.
+15,1,3,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,32182.96,30772.54,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #1. Soil test recommended prior to nitrogen top-dressing.
+16,2,4,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,65777.59,66685.96,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #2. Soil test recommended prior to nitrogen top-dressing.
+17,3,5,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,32183.59,30300.1,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #3. Soil test recommended prior to nitrogen top-dressing.
+18,4,6,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,43206.72,42465.02,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #4. Soil test recommended prior to nitrogen top-dressing.
+19,5,7,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,38068.51,39619.6,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #5. Soil test recommended prior to nitrogen top-dressing.
+20,6,8,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,45149.96,44822.06,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #6. Soil test recommended prior to nitrogen top-dressing.
+21,7,9,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,50350.55,47734.11,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #7. Soil test recommended prior to nitrogen top-dressing.
+22,8,10,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,65636.19,62995.51,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #8. Soil test recommended prior to nitrogen top-dressing.
+23,9,11,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,23169.9,22337.77,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #9. Soil test recommended prior to nitrogen top-dressing.
+24,10,12,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,58602.7,56565.46,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #10. Soil test recommended prior to nitrogen top-dressing.
+25,11,1,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,45621.82,42499.09,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #11. Soil test recommended prior to nitrogen top-dressing.
+26,12,2,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,23575.21,24734.5,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #12. Soil test recommended prior to nitrogen top-dressing.
+27,13,3,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,51160.88,47531.76,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #13. Soil test recommended prior to nitrogen top-dressing.
+28,14,4,Rabi 2024-25,2024-11-10,2025-03-20,2025-03-20,35745.65,35435.29,Completed,Harvested,Rotational crop cycle for Rabi 2024-25 on Field #14. Soil test recommended prior to nitrogen top-dressing.
+29,1,4,Zaid 2025,2025-04-01,2025-06-28,,71913.25,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #1. Soil test recommended prior to nitrogen top-dressing.
+30,2,5,Zaid 2025,2025-04-01,2025-06-28,,30312.22,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #2. Soil test recommended prior to nitrogen top-dressing.
+31,3,6,Zaid 2025,2025-04-01,2025-06-28,,63430.36,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #3. Soil test recommended prior to nitrogen top-dressing.
+32,4,7,Zaid 2025,2025-04-01,2025-06-28,,26770.82,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #4. Soil test recommended prior to nitrogen top-dressing.
+33,5,8,Zaid 2025,2025-04-01,2025-06-28,,19376.43,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #5. Soil test recommended prior to nitrogen top-dressing.
+34,6,9,Zaid 2025,2025-04-01,2025-06-28,,24561.26,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #6. Soil test recommended prior to nitrogen top-dressing.
+35,7,10,Zaid 2025,2025-04-01,2025-06-28,,27629.11,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #7. Soil test recommended prior to nitrogen top-dressing.
+36,8,11,Zaid 2025,2025-04-01,2025-06-28,,54314.44,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #8. Soil test recommended prior to nitrogen top-dressing.
+37,9,12,Zaid 2025,2025-04-01,2025-06-28,,58234.11,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #9. Soil test recommended prior to nitrogen top-dressing.
+38,10,1,Zaid 2025,2025-04-01,2025-06-28,,33799.26,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #10. Soil test recommended prior to nitrogen top-dressing.
+39,11,2,Zaid 2025,2025-04-01,2025-06-28,,32300.23,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #11. Soil test recommended prior to nitrogen top-dressing.
+40,12,3,Zaid 2025,2025-04-01,2025-06-28,,59694.76,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #12. Soil test recommended prior to nitrogen top-dressing.
+41,13,4,Zaid 2025,2025-04-01,2025-06-28,,38116.56,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #13. Soil test recommended prior to nitrogen top-dressing.
+42,14,5,Zaid 2025,2025-04-01,2025-06-28,,67327.82,,Maturity,In Progress,Rotational crop cycle for Zaid 2025 on Field #14. Soil test recommended prior to nitrogen top-dressing.
+43,1,5,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,55803.26,58555.72,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #1. Soil test recommended prior to nitrogen top-dressing.
+44,2,6,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,33077.16,32419.16,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #2. Soil test recommended prior to nitrogen top-dressing.
+45,3,7,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,67241.32,67008.49,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #3. Soil test recommended prior to nitrogen top-dressing.
+46,4,8,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,53236.1,52242.26,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #4. Soil test recommended prior to nitrogen top-dressing.
+47,5,9,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,46499.33,41905.94,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #5. Soil test recommended prior to nitrogen top-dressing.
+48,6,10,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,21664.44,20585.16,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #6. Soil test recommended prior to nitrogen top-dressing.
+49,7,11,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,26319.04,26783.99,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #7. Soil test recommended prior to nitrogen top-dressing.
+50,8,12,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,20031.12,18588.9,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #8. Soil test recommended prior to nitrogen top-dressing.
+51,9,1,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,41428.17,38356.91,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #9. Soil test recommended prior to nitrogen top-dressing.
+52,10,2,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,64181.26,65601.58,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #10. Soil test recommended prior to nitrogen top-dressing.
+53,11,3,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,49044.81,48480.29,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #11. Soil test recommended prior to nitrogen top-dressing.
+54,12,4,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,50497.92,45554.61,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #12. Soil test recommended prior to nitrogen top-dressing.
+55,13,5,Kharif 2025,2025-06-20,2025-10-30,2025-10-30,74115.11,69085.07,Completed,Harvested,Rotational crop cycle for Kharif 2025 on Field #13. Soil test recommended prior to nitrogen top-dressing.
+56,1,1,Kharif 2024 (Trial Edge),2024-06-10,2024-10-15,2024-10-14,25000.0,24800.0,Completed,Harvested,

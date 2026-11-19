@@ -1,0 +1,15 @@
+equipment_id,farm_id,category_id,name,make_and_model,serial_number,purchase_date,purchase_cost_inr,current_meter_hours,status,last_serviced_date,next_service_due_hours
+1,1,1,Mahindra Arjun Novo 605 DI,Mahindra & Mahindra 60HP,M&M-NOV-2023-8891,2023-04-10,940000.0,780.5,Active,2024-08-15,1000.0
+2,1,5,ASPEE HTP Tractor Boom Sprayer,ASPEE Agri-400L,ASP-BOM-2023-4102,2023-05-18,185000.0,310.0,Active,2024-09-01,500.0
+3,1,3,Shaktiman Regular Smart Rotavator,Shaktiman 7-Feet,SHK-ROTA-2023-1120,2023-06-12,135000.0,240.0,Idle,2024-05-10,400.0
+4,2,1,John Deere 5310 PowerTech,John Deere 55HP 4WD,JD-5310-2022-9904,2022-10-15,1120000.0,1420.0,Active,2024-10-02,1500.0
+5,2,2,Preet 987 Combine Harvester,Preet Agro Self-Propelled,PRT-987-2022-0043,2022-11-20,2450000.0,680.0,In Maintenance,2024-10-25,700.0
+6,2,7,Standard Hydraulic Tipping Trolley,Standard Agro 5-Tonne,STD-TRL-2022-5512,2022-11-25,210000.0,890.0,Active,2024-04-12,1200.0
+7,3,1,Sonalika Tiger DI 75 4WD,Sonalika International 75HP,SNL-TIG-2023-6611,2023-02-14,1280000.0,620.0,Active,2024-07-19,750.0
+8,3,3,Lemken Opal 090 Hydraulic Reversible Plough,Lemken India 3-Furrow,LMK-OPL-2023-2289,2023-03-05,245000.0,195.0,Active,2024-06-18,350.0
+9,4,1,Swaraj 855 FE High Torque,Swaraj Tractors 52HP,SWR-855-2021-3312,2021-08-20,860000.0,1890.0,Active,2024-09-14,2000.0
+10,4,6,Kirloskar Diesel High-Lift Pump 10HP,Kirloskar DM-10,KIR-PMP-2021-7781,2021-09-02,95000.0,2150.0,Active,2024-08-20,2300.0
+11,5,2,Kubota DC-68G Harvester,Kubota Paddy Master Crawler,KUB-DC68-2023-1490,2023-07-10,2780000.0,490.0,Active,2024-10-11,600.0
+12,5,4,National Zero Till Seed-Cum-Fertilizer Drill,National Agro 11-Tyne,NAT-ZTD-2023-9012,2023-08-01,98000.0,180.0,Idle,2024-03-25,300.0
+13,8,1,New Holland 3630 TX Special Edition,New Holland 50HP,NH-3630-2020-4491,2020-05-15,890000.0,2350.0,In Maintenance,2024-11-01,2400.0
+14,1,6,Texmo Submersible Pump 7.5HP (Retired),Texmo Aqua Prime,TXM-SUB-2018-0012,2018-02-10,42000.0,4500.0,Decommissioned,2022-01-15,

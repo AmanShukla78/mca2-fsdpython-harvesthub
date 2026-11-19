@@ -1,0 +1,11 @@
+farm_id,farm_name,owner_id,total_acres,location_address,city,state,pin_code,latitude,longitude
+1,Sahyadri Agro Estate,2,85.5,"Gat No 142, Dindori Road, Pimpalgaon",Nashik,Maharashtra,422209,20.1742,73.9875
+2,Malwa Golden Fields,3,120.0,"Village Sangat Mandi, Dabwali Road",Bathinda,Punjab,151401,30.1245,74.8512
+3,Deccan Gold Farm,4,65.0,"Survey 89, Manjri Agri Corridor",Pune,Maharashtra,412307,18.4982,73.9814
+4,Krishna Valley Agro,5,95.0,Tenali Rural Sector 4,Guntur,Andhra Pradesh,522201,16.2431,80.6402
+5,Karnal Precision Greens,6,110.0,"GT Karnal Road, Taraori",Karnal,Haryana,132116,29.8032,76.9298
+6,Narmada Valley Orchards,2,50.0,"Sanwer Road, Barwaha",Indore,Madhya Pradesh,451115,22.253,76.0421
+7,Cauvery Delta Agri Hub,5,75.0,"Kallanai Road, Lalgudi",Tiruchirappalli,Tamil Nadu,621601,10.871,78.8152
+8,Saurashtra Cotton Estate,4,140.0,"Gondal Highway, Shapar",Rajkot,Gujarat,360024,21.9421,70.7812
+9,Ganga Basin Agri Zone,1,90.0,"Mirzapur Road, Ramnagar",Varanasi,Uttar Pradesh,221008,25.2678,83.0315
+10,Vidarbha Agro Frontier,2,45.0,"Taluka Katol, Kondhali Highway",Nagpur,Maharashtra,441103,,

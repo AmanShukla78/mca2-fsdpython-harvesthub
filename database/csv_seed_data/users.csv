@@ -1,0 +1,13 @@
+user_id,username,email,password_hash,first_name,last_name,phone_number,role_id,is_active
+1,admin_user,admin@harvesthub.in,pbkdf2_sha256$600000$c478a05c$9e6e8e0bd60cf91b3531b46a066927d6d9c6c8ec8cf8a4879de76c4e09f2c8f8,Aditya,Verma,+91-9811002233,1,True
+2,ramesh_patil,ramesh.patil@sahyaadriagro.in,pbkdf2_sha256$600000$c478a05c$9e6e8e0bd60cf91b3531b46a066927d6d9c6c8ec8cf8a4879de76c4e09f2c8f8,Ramesh,Patil,+91-9822334455,2,True
+3,gurpreet_singh,gurpreet@malwafarms.in,pbkdf2_sha256$600000$c478a05c$9e6e8e0bd60cf91b3531b46a066927d6d9c6c8ec8cf8a4879de76c4e09f2c8f8,Gurpreet,Singh,+91-9877112233,2,True
+4,suresh_deshmukh,suresh.deshmukh@deccanagri.in,pbkdf2_sha256$600000$c478a05c$9e6e8e0bd60cf91b3531b46a066927d6d9c6c8ec8cf8a4879de76c4e09f2c8f8,Suresh,Deshmukh,+91-9422001122,2,True
+5,lakshmi_narayana,lakshmi.agri@krishnavalley.in,pbkdf2_sha256$600000$c478a05c$9e6e8e0bd60cf91b3531b46a066927d6d9c6c8ec8cf8a4879de76c4e09f2c8f8,Lakshmi,Narayana,+91-9988223344,4,True
+6,harpal_sandhu,harpal.sandhu@punjabgreens.in,pbkdf2_sha256$600000$c478a05c$9e6e8e0bd60cf91b3531b46a066927d6d9c6c8ec8cf8a4879de76c4e09f2c8f8,Harpal,Sandhu,+91-9788334455,2,True
+7,raju_yadav,raju.operator@harvesthub.in,pbkdf2_sha256$600000$c478a05c$9e6e8e0bd60cf91b3531b46a066927d6d9c6c8ec8cf8a4879de76c4e09f2c8f8,Raju,Yadav,+91-9122334455,3,True
+8,vikram_choudhary,vikram.c@harvesthub.in,pbkdf2_sha256$600000$c478a05c$9e6e8e0bd60cf91b3531b46a066927d6d9c6c8ec8cf8a4879de76c4e09f2c8f8,Vikram,Choudhary,+91-9233445566,3,True
+9,manpreet_kaur,manpreet.k@malwafarms.in,pbkdf2_sha256$600000$c478a05c$9e6e8e0bd60cf91b3531b46a066927d6d9c6c8ec8cf8a4879de76c4e09f2c8f8,Manpreet,Kaur,+91-9344556677,3,True
+10,balwinder_singh,balwinder.tractor@harvesthub.in,pbkdf2_sha256$600000$c478a05c$9e6e8e0bd60cf91b3531b46a066927d6d9c6c8ec8cf8a4879de76c4e09f2c8f8,Balwinder,Singh,+91-9455667788,3,True
+11,ganesh_jadhav,ganesh.jadhav@sahyaadriagro.in,pbkdf2_sha256$600000$c478a05c$9e6e8e0bd60cf91b3531b46a066927d6d9c6c8ec8cf8a4879de76c4e09f2c8f8,Ganesh,Jadhav,+91-9566778899,3,True
+12,ramesh_patil_jr,ramesh.patil.jr@sahyaadriagro.in,pbkdf2_sha256$600000$c478a05c$9e6e8e0bd60cf91b3531b46a066927d6d9c6c8ec8cf8a4879de76c4e09f2c8f8,Ramesh,Patil Jr,+91-9677889900,3,True

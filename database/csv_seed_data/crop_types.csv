@@ -1,0 +1,13 @@
+crop_id,crop_name,botanical_name,crop_category,standard_growth_days,ideal_soil_type,expected_yield_per_acre_kg
+1,Basmati Rice 1121,Oryza sativa var. Basmati,Kharif,140,Clay Loam / Alluvial,2200.0
+2,Sharbati Wheat,Triticum aestivum,Rabi,125,Alluvial / Loamy,2100.0
+3,Bt Cotton (Bollgard II),Gossypium hirsutum,Kharif,160,Black Cotton Soil,1400.0
+4,Sugarcane (Co-0238),Saccharum officinarum,Cash Crop,365,Deep Loam / Black Soil,38000.0
+5,Soybean (JS 335),Glycine max,Kharif,100,Well-drained Black Soil,1100.0
+6,Mustard (Pusa Bold),Brassica juncea,Rabi,110,Alluvial / Sandy Loam,950.0
+7,Chickpeas / Desi Chana (JG 11),Cicer arietinum,Rabi,105,Clay Loam / Sandy Loam,850.0
+8,Groundnut (Kadiri 6),Arachis hypogaea,Kharif,115,Sandy Loam / Red Soil,1200.0
+9,Maize Hybrid (Pioneer P3396),Zea mays,Kharif,110,Alluvial / Loam,3100.0
+10,Onion (Bhima Super / Red),Allium cepa,Rabi,120,Deep Friable Sandy Loam,10500.0
+11,Potato (Kufri Jyoti),Solanum tuberosum,Rabi,95,Sandy Loam rich in organic matter,12000.0
+12,Turmeric (Salem Super),Curcuma longa,Cash Crop,270,Friable Sandy / Clay Loam,9000.0

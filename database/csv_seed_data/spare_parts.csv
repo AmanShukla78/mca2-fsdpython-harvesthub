@@ -1,0 +1,16 @@
+part_id,part_number,name,category,equipment_category_id,unit_price_inr,current_stock,minimum_reorder_level,unit_of_measure,supplier_id
+1,FLT-OIL-MM605,Mahindra Arjun Engine Oil Filter Cartridge,Filters,1,580.0,18,5,Units,1
+2,FLT-DSL-JD5310,John Deere Dual Stage Fuel Filter Element,Filters,1,920.0,12,4,Units,10
+3,LUB-HYD-68-20L,Shell Spirax 68 Premium Hydraulic Oil 20L Bucket,Lubricants,1,4850.0,6,3,Buckets,1
+4,BLD-ROT-SHK7,Shaktiman Boron Steel Rotavator Curved Blades (Set of 6),Wear Parts,3,1450.0,24,8,Sets,5
+5,HAR-KNF-PRT987,Preet Combine Serrated Knife Section Kit (48 Pcs),Cutting Components,2,3200.0,4,3,Kits,2
+6,NZL-SPR-ASPEE,TeeJet Hollow Cone Brass Spray Nozzle Kit (8 Pcs),Sprayer Parts,5,1150.0,15,5,Sets,4
+7,BLT-V-B64,High-Torque V-Belt B-64 Kevlar Reinforced,Drive Belts,1,680.0,14,5,Units,1
+8,RAD-CLN-5L,Ethylene Glycol Heavy Duty Coolant 5L Canister,Fluids,1,950.0,20,6,Cans,1
+9,BAT-12V-88AH,Amaron Hi-Life Heavy Commercial Battery 12V 88Ah,Electrical,1,7400.0,3,2,Units,1
+10,FLT-AIR-KUBOTA,Kubota Harvester Heavy Duty Dual Air Cleaner Inner+Outer,Filters,2,2800.0,2,3,Sets,10
+11,BRG-PLW-LMK,Lemken Reversible Disc Hub Taper Roller Bearing,Bearings,3,1650.0,8,4,Units,5
+12,PTO-UJT-SWR,Universal Joint Cross Spider Kit 35x106.5 for Swaraj PTO,Transmission,1,1380.0,9,4,Units,1
+13,VLV-DRP-JAIN,Jain 2-Inch Hydrocyclone Sand Filter Flush Valve,Irrigation Parts,6,2100.0,7,3,Units,4
+14,SHR-BLT-NAT,Grade 8.8 High-Tensile Shear Pins for Planter (Pack of 20),Fasteners,4,450.0,25,10,Packs,5
+15,CHN-ELEV-KUBOTA,Kubota Grain Elevator Roller Drive Chain Link ASM,Chains,2,4200.0,0,2,Units,10

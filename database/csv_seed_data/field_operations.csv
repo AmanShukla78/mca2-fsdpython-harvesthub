@@ -1,0 +1,66 @@
+operation_id,planting_id,operation_type,scheduled_date,completion_date,status,assigned_to_user_id,equipment_id,notes
+1,2,Ploughing,2024-03-04,2024-03-04,Completed,8,2,Executed Ploughing according to the agronomic protocol. Target depth and calibration verified.
+2,3,Harrowing,2024-05-07,2024-05-07,Completed,9,3,Executed Harrowing according to the agronomic protocol. Target depth and calibration verified.
+3,4,Sowing,2024-07-10,2024-07-10,Completed,10,4,Executed Sowing according to the agronomic protocol. Target depth and calibration verified.
+4,5,Fertilizer Application,2024-09-13,2024-09-13,Completed,11,,Executed Fertilizer Application according to the agronomic protocol. Target depth and calibration verified.
+5,6,Pesticide Spray,2024-11-16,2024-11-16,Completed,7,7,Executed Pesticide Spray according to the agronomic protocol. Target depth and calibration verified.
+6,7,Weeding,2024-02-19,2024-02-19,Completed,8,,Executed Weeding according to the agronomic protocol. Target depth and calibration verified.
+7,8,Irrigation,2024-04-22,2024-04-22,Completed,9,,Executed Irrigation according to the agronomic protocol. Target depth and calibration verified.
+8,9,Harvesting,2024-06-25,2024-06-25,Completed,10,11,Executed Harvesting according to the agronomic protocol. Target depth and calibration verified.
+9,10,Ploughing,2024-08-01,2024-08-01,Completed,11,1,Executed Ploughing according to the agronomic protocol. Target depth and calibration verified.
+10,11,Harrowing,2024-10-04,2024-10-04,Completed,7,2,Executed Harrowing according to the agronomic protocol. Target depth and calibration verified.
+11,12,Sowing,2024-01-07,2024-01-07,Completed,8,3,Executed Sowing according to the agronomic protocol. Target depth and calibration verified.
+12,13,Fertilizer Application,2024-03-10,2024-03-10,Completed,9,,Executed Fertilizer Application according to the agronomic protocol. Target depth and calibration verified.
+13,14,Pesticide Spray,2024-05-13,2024-05-13,Completed,10,5,Executed Pesticide Spray according to the agronomic protocol. Target depth and calibration verified.
+14,15,Weeding,2024-07-16,2024-07-16,Completed,11,,Executed Weeding according to the agronomic protocol. Target depth and calibration verified.
+15,16,Irrigation,2024-09-19,2024-09-19,Completed,7,,Executed Irrigation according to the agronomic protocol. Target depth and calibration verified.
+16,17,Harvesting,2024-11-22,2024-11-22,Completed,8,9,Executed Harvesting according to the agronomic protocol. Target depth and calibration verified.
+17,18,Ploughing,2024-02-25,2024-02-25,Completed,9,11,Executed Ploughing according to the agronomic protocol. Target depth and calibration verified.
+18,19,Harrowing,2024-04-01,2024-04-01,Completed,10,1,Executed Harrowing according to the agronomic protocol. Target depth and calibration verified.
+19,20,Sowing,2024-06-04,2024-06-04,Completed,11,2,Executed Sowing according to the agronomic protocol. Target depth and calibration verified.
+20,21,Fertilizer Application,2024-08-07,2024-08-07,Completed,7,,Executed Fertilizer Application according to the agronomic protocol. Target depth and calibration verified.
+21,22,Pesticide Spray,2024-10-10,2024-10-10,Completed,8,4,Executed Pesticide Spray according to the agronomic protocol. Target depth and calibration verified.
+22,23,Weeding,2024-01-13,2024-01-13,Completed,9,,Executed Weeding according to the agronomic protocol. Target depth and calibration verified.
+23,24,Irrigation,2024-03-16,2024-03-16,Completed,10,,Executed Irrigation according to the agronomic protocol. Target depth and calibration verified.
+24,25,Harvesting,2024-05-19,2024-05-19,Completed,11,8,Executed Harvesting according to the agronomic protocol. Target depth and calibration verified.
+25,26,Ploughing,2024-07-22,2024-07-22,Completed,7,9,Executed Ploughing according to the agronomic protocol. Target depth and calibration verified.
+26,27,Harrowing,2024-09-25,2024-09-25,Completed,8,11,Executed Harrowing according to the agronomic protocol. Target depth and calibration verified.
+27,28,Sowing,2024-11-01,2024-11-01,Completed,9,1,Executed Sowing according to the agronomic protocol. Target depth and calibration verified.
+28,29,Fertilizer Application,2024-02-04,2024-02-04,Completed,10,,Executed Fertilizer Application according to the agronomic protocol. Target depth and calibration verified.
+29,30,Pesticide Spray,2024-04-07,2024-04-07,Completed,11,3,Executed Pesticide Spray according to the agronomic protocol. Target depth and calibration verified.
+30,31,Weeding,2024-06-10,2024-06-10,Completed,7,,Executed Weeding according to the agronomic protocol. Target depth and calibration verified.
+31,32,Irrigation,2025-08-13,2025-08-13,Completed,8,,Executed Irrigation according to the agronomic protocol. Target depth and calibration verified.
+32,33,Harvesting,2025-10-16,,In Progress,9,7,Executed Harvesting according to the agronomic protocol. Target depth and calibration verified.
+33,34,Ploughing,2025-01-19,2025-01-19,Completed,10,8,Executed Ploughing according to the agronomic protocol. Target depth and calibration verified.
+34,35,Harrowing,2025-03-22,2025-03-22,Completed,11,9,Executed Harrowing according to the agronomic protocol. Target depth and calibration verified.
+35,36,Sowing,2025-05-25,2025-05-25,Completed,7,11,Executed Sowing according to the agronomic protocol. Target depth and calibration verified.
+36,37,Fertilizer Application,2025-07-01,2025-07-01,Completed,8,,Executed Fertilizer Application according to the agronomic protocol. Target depth and calibration verified.
+37,38,Pesticide Spray,2025-09-04,,Scheduled,9,2,Executed Pesticide Spray according to the agronomic protocol. Target depth and calibration verified.
+38,39,Weeding,2025-11-07,,In Progress,10,,Executed Weeding according to the agronomic protocol. Target depth and calibration verified.
+39,40,Irrigation,2025-02-10,2025-02-10,Completed,11,,Executed Irrigation according to the agronomic protocol. Target depth and calibration verified.
+40,41,Harvesting,2025-04-13,2025-04-13,Completed,7,5,Executed Harvesting according to the agronomic protocol. Target depth and calibration verified.
+41,42,Ploughing,2025-06-16,2025-06-16,Completed,8,7,Executed Ploughing according to the agronomic protocol. Target depth and calibration verified.
+42,43,Harrowing,2025-08-19,2025-08-19,Completed,9,8,Executed Harrowing according to the agronomic protocol. Target depth and calibration verified.
+43,44,Sowing,2025-10-22,,Scheduled,10,9,Executed Sowing according to the agronomic protocol. Target depth and calibration verified.
+44,45,Fertilizer Application,2025-01-25,2025-01-25,Completed,11,,Executed Fertilizer Application according to the agronomic protocol. Target depth and calibration verified.
+45,46,Pesticide Spray,2025-03-01,2025-03-01,Completed,7,1,Executed Pesticide Spray according to the agronomic protocol. Target depth and calibration verified.
+46,47,Weeding,2025-05-04,2025-05-04,Completed,8,,Executed Weeding according to the agronomic protocol. Target depth and calibration verified.
+47,48,Irrigation,2025-07-07,2025-07-07,Completed,9,,Executed Irrigation according to the agronomic protocol. Target depth and calibration verified.
+48,49,Harvesting,2025-09-10,,In Progress,10,4,Executed Harvesting according to the agronomic protocol. Target depth and calibration verified.
+49,50,Ploughing,2025-11-13,,Scheduled,11,5,Executed Ploughing according to the agronomic protocol. Target depth and calibration verified.
+50,1,Harrowing,2025-02-16,2025-02-16,Completed,7,7,Executed Harrowing according to the agronomic protocol. Target depth and calibration verified.
+51,2,Sowing,2025-04-19,2025-04-19,Completed,8,8,Executed Sowing according to the agronomic protocol. Target depth and calibration verified.
+52,3,Fertilizer Application,2025-06-22,2025-06-22,Completed,9,,Executed Fertilizer Application according to the agronomic protocol. Target depth and calibration verified.
+53,4,Pesticide Spray,2025-08-25,2025-08-25,Completed,10,11,Executed Pesticide Spray according to the agronomic protocol. Target depth and calibration verified.
+54,5,Weeding,2025-10-01,,In Progress,11,,Executed Weeding according to the agronomic protocol. Target depth and calibration verified.
+55,6,Irrigation,2025-01-04,2025-01-04,Completed,7,,Executed Irrigation according to the agronomic protocol. Target depth and calibration verified.
+56,7,Harvesting,2026-03-07,,Scheduled,8,3,Executed Harvesting according to the agronomic protocol. Target depth and calibration verified.
+57,8,Ploughing,2026-05-10,,Scheduled,9,4,Executed Ploughing according to the agronomic protocol. Target depth and calibration verified.
+58,9,Harrowing,2026-07-13,,Scheduled,10,5,Executed Harrowing according to the agronomic protocol. Target depth and calibration verified.
+59,10,Sowing,2026-09-16,,Scheduled,11,7,Executed Sowing according to the agronomic protocol. Target depth and calibration verified.
+60,11,Fertilizer Application,2026-11-19,,Scheduled,7,,Executed Fertilizer Application according to the agronomic protocol. Target depth and calibration verified.
+61,12,Pesticide Spray,2026-02-22,,Scheduled,8,9,Executed Pesticide Spray according to the agronomic protocol. Target depth and calibration verified.
+62,13,Weeding,2026-04-25,,Scheduled,9,,Executed Weeding according to the agronomic protocol. Target depth and calibration verified.
+63,14,Irrigation,2026-06-01,,Scheduled,10,,Executed Irrigation according to the agronomic protocol. Target depth and calibration verified.
+64,15,Harvesting,2026-08-04,,Scheduled,11,2,Executed Harvesting according to the agronomic protocol. Target depth and calibration verified.
+65,16,Ploughing,2026-10-07,,Scheduled,7,3,Executed Ploughing according to the agronomic protocol. Target depth and calibration verified.

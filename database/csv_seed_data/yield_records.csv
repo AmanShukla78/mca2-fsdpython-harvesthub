@@ -1,0 +1,53 @@
+yield_id,planting_id,harvest_date,gross_yield_kg,net_yield_kg,quality_grade,market_price_per_kg_inr,total_revenue_inr,storage_location,buyer_name
+1,1,2024-07-05,22081.52,21378.47,Grade B (Standard Market),38.67,826705.43,"Central Cold Storage, Pimpalgaon",ITC Choupal Sagar Mandi
+2,2,2024-09-09,15807.75,15439.02,Grade C (Processing/Fair),46.22,713591.5,Nashik APMC Mandi Shed #2,Punjab State Grains Procurement Corp (PUNGRAIN)
+3,3,2024-05-13,54935.6,52398.59,Grade A (Export/Premium),69.67,3650609.77,Tenali Grain Godown,Maharashtra State Agricultural Marketing Board
+4,4,2024-07-17,58731.71,56349.78,Grade B (Standard Market),22.57,1271814.53,Karnal Food Park Silo,Godrej Agrovet Procurement
+5,5,2024-09-21,60880.35,59418.55,Grade C (Processing/Fair),65.01,3862799.94,"Warehouse Silo 4, Bathinda",BigBasket Farm Direct
+6,6,2024-05-25,50395.94,49239.92,Grade A (Export/Premium),61.02,3004619.92,"Central Cold Storage, Pimpalgaon",Reliance Fresh Direct Agro
+7,7,2024-07-02,29574.67,28955.31,Grade B (Standard Market),55.35,1602676.41,Nashik APMC Mandi Shed #2,National Agricultural Cooperative Marketing Federation (NAFED)
+8,8,2024-09-06,54080.82,52165.35,Grade C (Processing/Fair),37.74,1968720.31,Tenali Grain Godown,Adani Agri Logistics Ltd
+9,9,2024-05-10,16400.17,15928.98,Grade A (Export/Premium),76.01,1210761.77,Karnal Food Park Silo,ITC Choupal Sagar Mandi
+10,10,2024-07-14,27614.67,26398.16,Grade B (Standard Market),82.29,2172304.59,"Warehouse Silo 4, Bathinda",Punjab State Grains Procurement Corp (PUNGRAIN)
+11,11,2024-09-18,54434.77,51747.4,Grade C (Processing/Fair),24.33,1259014.24,"Central Cold Storage, Pimpalgaon",Maharashtra State Agricultural Marketing Board
+12,12,2024-05-22,47555.7,45256.18,Grade A (Export/Premium),28.52,1290706.25,Nashik APMC Mandi Shed #2,Godrej Agrovet Procurement
+13,13,2024-07-26,41319.93,39258.3,Grade B (Standard Market),34.1,1338708.03,Tenali Grain Godown,BigBasket Farm Direct
+14,14,2024-09-03,56338.43,54522.42,Grade C (Processing/Fair),72.55,3955601.57,Karnal Food Park Silo,Reliance Fresh Direct Agro
+15,15,2024-05-07,34456.87,33747.08,Grade A (Export/Premium),27.33,922307.7,"Warehouse Silo 4, Bathinda",National Agricultural Cooperative Marketing Federation (NAFED)
+16,16,2024-07-11,26741.86,25679.54,Grade B (Standard Market),37.83,971457.0,"Central Cold Storage, Pimpalgaon",Adani Agri Logistics Ltd
+17,17,2024-09-15,30536.07,29575.8,Grade C (Processing/Fair),25.38,750633.8,Nashik APMC Mandi Shed #2,ITC Choupal Sagar Mandi
+18,18,2024-05-19,57583.3,56411.58,Grade A (Export/Premium),37.4,2109793.09,Tenali Grain Godown,Punjab State Grains Procurement Corp (PUNGRAIN)
+19,19,2024-07-23,19199.11,18388.4,Grade B (Standard Market),84.18,1547935.51,Karnal Food Park Silo,Maharashtra State Agricultural Marketing Board
+20,20,2024-09-27,47117.27,45365.9,Grade C (Processing/Fair),47.65,2161685.13,"Warehouse Silo 4, Bathinda",Godrej Agrovet Procurement
+21,21,2024-05-04,48372.18,46070.3,Grade A (Export/Premium),74.38,3426708.91,"Central Cold Storage, Pimpalgaon",BigBasket Farm Direct
+22,22,2024-07-08,56135.26,53898.56,Grade B (Standard Market),28.48,1535030.99,Nashik APMC Mandi Shed #2,Reliance Fresh Direct Agro
+23,23,2024-09-12,45781.78,44307.19,Grade C (Processing/Fair),36.97,1638036.81,Tenali Grain Godown,National Agricultural Cooperative Marketing Federation (NAFED)
+24,24,2024-05-16,42916.07,41437.94,Grade A (Export/Premium),36.99,1532789.4,Karnal Food Park Silo,Adani Agri Logistics Ltd
+25,25,2024-07-20,57213.26,55065.87,Grade B (Standard Market),74.67,4111768.51,"Warehouse Silo 4, Bathinda",ITC Choupal Sagar Mandi
+26,26,2024-09-24,53863.73,51328.1,Grade C (Processing/Fair),57.49,2950852.47,"Central Cold Storage, Pimpalgaon",Punjab State Grains Procurement Corp (PUNGRAIN)
+27,27,2024-05-01,35296.25,33703.91,Grade A (Export/Premium),74.22,2501504.2,Nashik APMC Mandi Shed #2,Maharashtra State Agricultural Marketing Board
+28,28,2024-07-05,53351.4,51545.51,Grade B (Standard Market),73.97,3812821.37,Tenali Grain Godown,Godrej Agrovet Procurement
+29,29,2024-09-09,47357.86,46204.47,Grade C (Processing/Fair),73.28,3385863.56,Karnal Food Park Silo,BigBasket Farm Direct
+30,30,2024-05-13,42408.02,40420.47,Grade A (Export/Premium),29.89,1208167.85,"Warehouse Silo 4, Bathinda",Reliance Fresh Direct Agro
+31,31,2024-07-17,42473.47,40445.47,Grade B (Standard Market),23.28,941570.54,"Central Cold Storage, Pimpalgaon",National Agricultural Cooperative Marketing Federation (NAFED)
+32,32,2024-09-21,25819.14,24598.4,Grade C (Processing/Fair),41.73,1026491.23,Nashik APMC Mandi Shed #2,Adani Agri Logistics Ltd
+33,33,2024-05-25,22604.05,21967.03,Grade A (Export/Premium),74.43,1635006.04,Tenali Grain Godown,ITC Choupal Sagar Mandi
+34,34,2024-07-02,46737.9,45454.27,Grade B (Standard Market),75.56,3434524.64,Karnal Food Park Silo,Punjab State Grains Procurement Corp (PUNGRAIN)
+35,35,2024-09-06,53636.88,51391.4,Grade C (Processing/Fair),24.34,1250866.68,"Warehouse Silo 4, Bathinda",Maharashtra State Agricultural Marketing Board
+36,36,2025-05-10,60745.2,58006.36,Grade A (Export/Premium),31.84,1846922.5,"Central Cold Storage, Pimpalgaon",Godrej Agrovet Procurement
+37,37,2025-07-14,59962.94,57812.81,Grade B (Standard Market),80.84,4673587.56,Nashik APMC Mandi Shed #2,BigBasket Farm Direct
+38,38,2025-09-18,20163.97,19456.17,Grade C (Processing/Fair),50.57,983898.52,Tenali Grain Godown,Reliance Fresh Direct Agro
+39,39,2025-05-22,26266.89,25447.82,Grade A (Export/Premium),61.19,1557152.11,Karnal Food Park Silo,National Agricultural Cooperative Marketing Federation (NAFED)
+40,40,2025-07-26,45431.81,44339.33,Grade B (Standard Market),79.25,3513891.9,"Warehouse Silo 4, Bathinda",Adani Agri Logistics Ltd
+41,41,2025-09-03,33452.35,32238.99,Grade C (Processing/Fair),83.88,2704206.48,"Central Cold Storage, Pimpalgaon",ITC Choupal Sagar Mandi
+42,42,2025-05-07,18520.25,17927.89,Grade A (Export/Premium),65.63,1176607.42,Nashik APMC Mandi Shed #2,Punjab State Grains Procurement Corp (PUNGRAIN)
+43,43,2025-07-11,49628.19,48494.61,Grade B (Standard Market),23.7,1149322.26,Tenali Grain Godown,Maharashtra State Agricultural Marketing Board
+44,44,2025-09-15,27466.14,26271.37,Grade C (Processing/Fair),34.92,917396.24,Karnal Food Park Silo,Godrej Agrovet Procurement
+45,45,2025-05-19,20080.92,19128.35,Grade A (Export/Premium),26.82,513022.35,"Warehouse Silo 4, Bathinda",BigBasket Farm Direct
+46,46,2025-07-23,59562.71,57534.3,Grade B (Standard Market),31.78,1828440.05,"Central Cold Storage, Pimpalgaon",Reliance Fresh Direct Agro
+47,47,2025-09-27,64599.66,63111.55,Grade C (Processing/Fair),52.21,3295054.03,Nashik APMC Mandi Shed #2,National Agricultural Cooperative Marketing Federation (NAFED)
+48,48,2025-05-04,22322.31,21233.75,Grade A (Export/Premium),48.84,1037056.35,Tenali Grain Godown,Adani Agri Logistics Ltd
+49,49,2025-07-08,25257.71,24210.59,Grade B (Standard Market),67.7,1639056.94,Karnal Food Park Silo,ITC Choupal Sagar Mandi
+50,50,2025-09-12,30170.05,29210.89,Grade C (Processing/Fair),45.63,1332892.91,"Warehouse Silo 4, Bathinda",Punjab State Grains Procurement Corp (PUNGRAIN)
+51,51,2025-05-16,61337.98,59481.9,Grade A (Export/Premium),29.35,1745793.77,"Central Cold Storage, Pimpalgaon",Maharashtra State Agricultural Marketing Board
+52,52,2025-07-20,15189.62,14730.57,Grade B (Standard Market),48.59,715758.4,Nashik APMC Mandi Shed #2,Godrej Agrovet Procurement

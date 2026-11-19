@@ -1,0 +1,5 @@
+role_id,role_code,role_name,description
+1,ADMIN,System Administrator,"Full system access, user management, and security configuration"
+2,FARM_MANAGER,Farm Manager,"Strategic crop planning, resource allocation, financial oversight, equipment fleet supervisor"
+3,FIELD_WORKER,Field Worker / Operator,"Executes daily operations, logs equipment usage, logs maintenance, updates stage tasks"
+4,AGRONOMIST,Agronomist / Consultant,"Soil health expert, yield forecasting, pest management specialist and advisory"

@@ -1,0 +1,13 @@
+supplier_id,company_name,contact_person,phone,email,address,city,state,gst_number
+1,Mahindra & Swaraj Genuine Spares Depot,Virendra Kulkarni,+91-9823011223,spares@mahindradepot.in,"Plot 45, MIDC Ambad",Nashik,Maharashtra,27AABCM8891Q1Z4
+2,Kisan Agro Seed & Biotechnology Corp,Harpreet Singh Brar,+91-9814022334,sales@kisanseeds.in,"Grain Market Yard, Shop 12",Bathinda,Punjab,03AAACK4421M1Z8
+3,Coromandel Agrico & Fertilizers Ltd,Ravi Shankar Murthy,+91-9848033445,supply@coromandelagri.com,Auto Nagar Road 5,Guntur,Andhra Pradesh,37AAACC1129F1ZL
+4,Jain Irrigation Systems Supply Hub,Pramod Chaudhari,+91-9423044556,dripcare@jains.com,"Jain Plastic Park, NH 6",Jalgaon,Maharashtra,27AAACJ2281P1ZP
+5,Shaktiman Agro Parts & Implements Ltd,Dinesh Patel,+91-9825055667,parts@shaktimanagro.com,"Survey 281, NH 27, Shapar",Rajkot,Gujarat,24AAACS9981K1Z2
+6,IFFCO Farmer Service & Fertilizer Center,Satish Dalal,+91-9416066778,iffco.karnal@iffco.in,Kunjpura Road,Karnal,Haryana,06AAACI3391D1ZQ
+7,Bayer CropScience India Regional Center,Anand Kulkarni,+91-9820077889,orders@bayercropscience.in,Magarpatta Cyber City,Pune,Maharashtra,27AAACB5512B1ZR
+8,Syngenta India Agriculture Logistics,Balaji Rao,+91-9940088990,logistics@syngenta.in,Trichy Agri Complex,Tiruchirappalli,Tamil Nadu,33AAACS7712E1ZS
+9,Kirloskar Pump & Motor Spares Agency,Sundaram Pillai,+91-9443099001,service@kirloskarspares.in,Avanashi Road,Coimbatore,Tamil Nadu,33AAACK4401L1ZT
+10,John Deere Northern Spares Network,Jaswinder Bhullar,+91-9872011225,dealer@johndeerepunjab.in,Industrial Area Phase 2,Chandigarh,Punjab,04AAACJ6631G1ZU
+11,Godrej Agrovet Inputs & Feeds,Manish Tiwari,+91-9755022336,agri@godrejagrovet.com,Sanwer Industrial Area,Indore,Madhya Pradesh,23AAACG1102A1ZV
+12,All-India Unified Apex Cooperative Agricultural Produce Marketing And Farm Machinery Federation Private Limited,Rajeev Ranjan,+91-9431033447,apex.federation@agricoop.in,Station Road Complex,Varanasi,Uttar Pradesh,09AAACA9921C1ZW
