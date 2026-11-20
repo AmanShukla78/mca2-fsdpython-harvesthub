@@ -1,3 +1,6 @@
+import os
+from django.conf import settings
+from django.http import HttpResponse
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
@@ -12,6 +15,13 @@ from equipment.views import (
     EquipmentViewSet, MaintenanceRecordViewSet, MaintenancePartsUsedViewSet,
     EquipmentUtilizationLogViewSet, SparePartOrderViewSet, FleetAnalyticsView
 )
+
+def home_view(request):
+    html_path = os.path.join(settings.BASE_DIR.parent, 'frontend', 'index.html')
+    if os.path.exists(html_path):
+        with open(html_path, 'r', encoding='utf-8') as f:
+            return HttpResponse(f.read(), content_type='text/html')
+    return HttpResponse("<h1>HarvestHub API Service</h1><p><a href='/api/'>Open API</a></p>")
 
 router = DefaultRouter()
 
@@ -43,6 +53,9 @@ router.register(r'equipment-utilization-logs', EquipmentUtilizationLogViewSet, b
 router.register(r'spare-part-orders', SparePartOrderViewSet, basename='spare-part-orders')
 
 urlpatterns = [
+    # Root View: Renders HarvestHub Frontend Application directly
+    path('', home_view, name='home'),
+    
     path('admin/', admin.site.urls),
     
     # Auth endpoints
